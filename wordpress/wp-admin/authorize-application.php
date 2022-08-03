@@ -161,29 +161,17 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 		if ( is_multisite() ) {
 			$blogs       = get_blogs_of_user( $user->ID, true );
 			$blogs_count = count( $blogs );
-
 			if ( $blogs_count > 1 ) {
 				?>
 				<p>
 					<?php
-					/* translators: 1: URL to my-sites.php, 2: Number of sites the user has. */
-					$message = _n(
-						'This will grant access to <a href="%1$s">the %2$s site in this installation that you have permissions on</a>.',
-						'This will grant access to <a href="%1$s">all %2$s sites in this installation that you have permissions on</a>.',
-						$blogs_count
-					);
-
-					if ( is_super_admin() ) {
-						/* translators: 1: URL to my-sites.php, 2: Number of sites the user has. */
-						$message = _n(
-							'This will grant access to <a href="%1$s">the %2$s site on the network as you have Super Admin rights</a>.',
-							'This will grant access to <a href="%1$s">all %2$s sites on the network as you have Super Admin rights</a>.',
-							$blogs_count
-						);
-					}
-
 					printf(
-						$message,
+						/* translators: 1: URL to my-sites.php, 2: Number of sites the user has. */
+						_n(
+							'This will grant access to <a href="%1$s">the %2$s site in this installation that you have permissions on</a>.',
+							'This will grant access to <a href="%1$s">all %2$s sites in this installation that you have permissions on</a>.',
+							$blogs_count
+						),
 						admin_url( 'my-sites.php' ),
 						number_format_i18n( $blogs_count )
 					);

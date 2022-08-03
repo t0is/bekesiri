@@ -45,7 +45,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 						'id'      => 'comment_status',
 						'value'   => $product_object->get_reviews_allowed( 'edit' ) ? 'open' : 'closed',
 						'label'   => __( 'Enable reviews', 'woocommerce' ),
-						'cbvalue' => 'closed',
+						'cbvalue' => 'open',
 					)
 				);
 				do_action( 'woocommerce_product_options_reviews' );

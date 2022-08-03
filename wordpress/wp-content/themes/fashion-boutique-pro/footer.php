@@ -27,7 +27,16 @@
               <?php printf( esc_html__( 'All Right Reserved', 'fashion-boutique-pro' )); ?>
             </p>  
           </div>  
-          
+          <div class="col-lg-6 col-md-6 align-self-center text-center">
+            <nav id="footer-menu" class="close-panal">
+              <?php
+                wp_nav_menu( array(
+                  'theme_location' => 'footer-menu',
+                  'container' => 'false'
+                ));
+              ?>
+            </nav>
+          </div>
         </div>
       </div>
     </div>

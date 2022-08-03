@@ -51,7 +51,7 @@
 			            </div>
 		            </div>
 				</div>
-				
+
 				<div class="col-lg-2 col-md-2 text-center">
 					<?php echo do_shortcode('[gtranslate]'); ?>
 				</div>
@@ -59,7 +59,7 @@
 	    </div>
 	</div>
 
-	<?php if ( get_theme_mod('fashion_boutique_pro_header_fixed_section_enable', true) == false ) : ?> 
+	<?php if ( get_theme_mod('fashion_boutique_pro_header_fixed_section_enable', true) == false ) : ?>
 	    <div id="site-navigation"></div>
 	<?php endif; ?>
 
@@ -73,7 +73,7 @@
 					    		<?php if ( get_theme_mod('fashion_boutique_pro_display_site_logo', true) == true ) : ?>
 					    		  <a href="#"> <img src="<?php echo esc_url( get_template_directory_uri().'/images/logo/logo.png');?>"></a>
 					    		<?php endif; ?>
-					    	<?php } else { 
+					    	<?php } else {
 				    		 	echo esc_url( the_custom_logo() );
 					    	}?>
 					    </div>
@@ -105,20 +105,9 @@
 					</div>
 					<div class="open-menu"><span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span></div>
 				</div>
-			
-				<div class="col-lg-2 col-md-2 col-9 order-button align-self-center text-right">
-<!--					--><?php //if ( get_theme_mod('fashion_boutique_pro_search_box_enable', true) == true ) : ?>
-<!--	                    <span class="header-search text-center ml-lg-1 ml-xl-4"> -->
-<!--	                        <a class="open-search-form" href="#search-form"><i class="fa fa-search" aria-hidden="true"></i></a>-->
-<!--	                        <div class="search-form">--><?php //get_search_form();?><!--</div>-->
-<!--	                    </span>-->
-<!--	                --><?php //endif; ?>
-<!--					<span class="my_account mx-xl-3 mx-lg-1 mx-2">-->
-<!--					    <a href="--><?php //echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?><!--" title="--><?php //_e('My Account',''); ?><!--"><i class="far fa-user"></i>-->
-<!--					    </a>-->
-<!--					</span>-->
 
-                    <span class="header-search text-center ml-lg-1 ml-xl-4">
+				<div class="col-lg-2 col-md-2 col-9 order-button align-self-center text-right">
+					<span class="header-search text-center ml-lg-1 ml-xl-4">
                         <a class="" href="#"><i class="dashicons dashicons-facebook-alt" aria-hidden="true"></i></a>
                     </span>
                     <span class="header-search text-center ml-lg-1 ml-xl-4">
@@ -127,19 +116,17 @@
                     <span class="header-search text-center ml-lg-1 ml-xl-4">
                         <a class="" href="#"><i class="dashicons dashicons-instagram" aria-hidden="true"></i></a>
                     </span>
-
-
 				</div>
 			</div>
 		</div>
 	</header>
 
-	 
-	<div class="container-fluid  all-category px-lg-5 align-self-center py-3">
+
+	<div class="container-fluid all-category px-lg-5 align-self-center py-3">
 		<div class="row">
 			<div class="col-lg-3 col-md-3">
 				<div class="category text-center align-self-center">
-					<?php if ( get_theme_mod('fashion_boutique_pro_header_button1_text', true) == true ) : ?> 
+					<?php if ( get_theme_mod('fashion_boutique_pro_header_button1_text', true) == true ) : ?>
 			            <a href="<?php echo esc_url(get_theme_mod('fashion_boutique_pro_header_button1_url'));?>" class="button1 animate__animated animate__pulse">
 			            <?php echo esc_html(get_theme_mod('fashion_boutique_pro_header_button1_text'));?></a>
 			        <?php endif; ?>
@@ -148,7 +135,7 @@
 
 			<div class="col-lg-6 col-md-6 align-self-center  product-search">
 				<div class="row">
-					<div class="col-xl-8 col-lg-7 col-md-6 col-6"> 
+					<div class="col-xl-8 col-lg-7 col-md-6 col-6">
 						<form role="search" method="get" class="woocommerce-product-search" action="<?php echo esc_url(home_url('/')); ?>">
 					        <?php
 					          $search_placeholder = esc_html(get_theme_mod('fashion_boutique_pro_product_search_placeholder', esc_html__('Find Yours Products','fashion-boutique-pro'))) ;
@@ -188,10 +175,10 @@
 			        </div>
 			    </div>
 			</div>
-			
+
 			<div class="col-lg-3 col-md-3 align-self-center">
 				<div  class="sale_title text-center align-self-center ">
-					<?php if ( get_theme_mod('fashion_boutique_pro_header_button2_text', true) == true ) : ?> 
+					<?php if ( get_theme_mod('fashion_boutique_pro_header_button2_text', true) == true ) : ?>
 			            <a href="<?php echo esc_url(get_theme_mod('fashion_boutique_pro_header_button2_url'));?>" class="button2 animate__animated animate__pulse">
 			            <?php echo esc_html(get_theme_mod('fashion_boutique_pro_header_button2_text'));?></a>
 			            <h6><?php echo esc_html(get_theme_mod('fashion_boutique_pro_button2_get_title'));?></h6>
@@ -200,6 +187,6 @@
 			</div>
 		</div>
 	</div>
- 
+
 </div>
 
